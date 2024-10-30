@@ -44,28 +44,28 @@
 
         private void OnIncreaseClicked(object sender, EventArgs e)
         {
-            var counter = (CounterModel)((Button)sender).CommandParameter;
+            CounterModel counter = (CounterModel)((Button)sender).CommandParameter;
             counter.Value++; 
             counterManager.UpdateCounter(counter); 
         }
 
         private void OnDecreaseClicked(object sender, EventArgs e)
         {
-            var counter = (CounterModel)((Button)sender).CommandParameter;
+            CounterModel counter = (CounterModel)((Button)sender).CommandParameter;
             counter.Value--;
             counterManager.UpdateCounter(counter); 
         }
 
         private void OnResetClicked(object sender, EventArgs e)
         {
-            var counter = (CounterModel)((Button)sender).CommandParameter;
+            CounterModel counter = (CounterModel)((Button)sender).CommandParameter;
             counter.Value = counter.InitialValue; 
             counterManager.UpdateCounter(counter); 
         }
 
         private void OnDeleteClicked(object sender, EventArgs e)
         {
-            var counter = (CounterModel)((Button)sender).CommandParameter;
+            CounterModel counter = (CounterModel)((Button)sender).CommandParameter;
             counterManager.Counters.Remove(counter); 
             counterManager.SaveCounters();
         }

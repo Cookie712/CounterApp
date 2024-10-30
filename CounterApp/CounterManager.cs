@@ -26,7 +26,7 @@ namespace CounterApp
 
         public void AddCounter(string name, int initialValue, Color color)
         {
-            var counter = new CounterModel(name, initialValue, color);
+            CounterModel counter = new CounterModel(name, initialValue, color);
             Counters.Add(counter);
             SaveCounters();
         }
