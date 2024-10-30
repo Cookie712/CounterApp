@@ -1,4 +1,5 @@
 # Aplikacja CounterApp
+![Screenshot 2024-10-28 123335](https://github.com/user-attachments/assets/13a9fbf4-484d-4324-a866-a88dfd272548)
 
 ## Opis Aplikacji
 CounterApp umożliwia użytkownikom tworzenie, edycję i zarządzanie licznikami. Każdy licznik może posiadać nazwę, wartość liczbową oraz kolor.
@@ -15,3 +16,4 @@ Aby uruchomić Counter MAUI App, upewnij się, że masz zainstalowane następuj�
 
 - **.NET SDK** w wersji 8.0
 - **Visual Studio 2022**
+  
