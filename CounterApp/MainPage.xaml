@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CounterApp.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20" VerticalOptions="Start">
+        <StackLayout HorizontalOptions="Center" Margin="20">
+            <Button Text="Dodaj licznik" Clicked="OnAddCounterClicked" WidthRequest="150" BackgroundColor="LightSkyBlue"/>
+        </StackLayout>
+
+        <CollectionView ItemsSource="{Binding Counters}" HeightRequest="500">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10" Padding="10">
+                        <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="Black"/>
+                        <Button Text="-" Clicked="OnDecreaseClicked" CommandParameter="{Binding .}" BackgroundColor="{Binding ColorHex}" TextColor="Black"/>
+                        <Label Text="{Binding Value}" VerticalOptions="Center" TextColor="Black"/>
+                        <Button Text="+" Clicked="OnIncreaseClicked" CommandParameter="{Binding .}" BackgroundColor="{Binding ColorHex}" TextColor="Black"/>
+                        <Button Text="Resetuj" Clicked="OnResetClicked" CommandParameter="{Binding .}" BackgroundColor="Black" TextColor="White"/>
+                        <Button Text="Usuń" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
