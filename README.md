@@ -1,7 +1,7 @@
 # Aplikacja CounterApp
 
 ## Opis Aplikacji
-CounterApp umożliwia użytkownikom tworzenie, edycję i zarządzanie licznikami. Każdy licznik może posiadać nazwę, wartość liczbową oraz kolor. Aplikacja zapewnia przyjazny interfejs do interakcji z licznikami, umożliwiając m.in. ich zwiększanie, zmniejszanie, resetowanie i usuwanie.
+CounterApp umożliwia użytkownikom tworzenie, edycję i zarządzanie licznikami. Każdy licznik może posiadać nazwę, wartość liczbową oraz kolor.
 
 ## Funkcjonalności
 - Tworzenie, edytowanie i usuwanie liczników.
